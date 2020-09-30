@@ -4,7 +4,7 @@ function Course(title, instructor, level, views){
   this.level = level;
   this.views = views;
   this.updateViews = function(){
-    return this.views++;
+    return ++this.views;
   }
 }
 
@@ -17,4 +17,5 @@ course01.updateViews();
 courses[0].updateViews()
 
 console.log(courses);
-console.log(courses[0].views);
+console.log(courses[0].updateViews());
+console.log(courses[0]["title"]);
